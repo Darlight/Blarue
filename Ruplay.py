@@ -4,7 +4,12 @@ def cargar_mapa(nombre):
 	lineas = []
 	for linea in mapa:
 		lineas.append(list(linea.strip()))
-	return lineas
+	for i in range(len(lineas)):
+		espacios = " "
+		lineas [i][i]
+		espacios += lineas[i][i]
+	return espacios
+
 
 print(cargar_mapa("mapas/mapa1.txt"))
 

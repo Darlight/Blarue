@@ -1,13 +1,14 @@
+from mapa import Mapa
 class Robot(object):
 
 	def __init__(self, rotacion, movimiento, pick, posicion_x, posicion_y,mapa,fichas):
-		self.rotacion = 1
-		self.movimiento = 0
+		self.rotacion = rotacion
+		self.movimiento = movimiento
 		self.pick = False
-		self.posicion_y = 0
-		self.posicion_x = 0
+		self.posicion_y = posicion_y
+		self.posicion_x = posicion_x
 		self.mapa = mapa 
-		self.fichas = 0
+		self.fichas = fichas
 
 	def rotar_posicion(self):
 		self.rotacion = 1

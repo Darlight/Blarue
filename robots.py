@@ -1,18 +1,21 @@
 from mapa import Mapa
 class Robot(object):
 
-	def __init__(self, rotacion, movimiento, pick, posicion_x, posicion_y,mapa,fichas):
-		self.rotacion = rotacion
-		self.movimiento = movimiento
-		self.pick = False
-		self.posicion_y = posicion_y
-		self.posicion_x = posicion_x
-		self.mapa = mapa 
-		self.fichas = fichas
+	def __init__(self, x, y):
+		self.x = x
+		self.y = y
+		self.fichas = 0
+		self.rotacion = "UP"
+		self.mapa = None
+
+	def mover_robot(self, pasos):
+		pass
+
+	def colocar_en_mapa(self, mapa):
+		self.mapa = mapa
 
 	def rotar_posicion(self):
-		self.rotacion = 1
-		if self.rotacion >= 5:
+		if self.rotacion >= "UP":
 			self.rotacion = 1
 		elif self.rotacion = 1:
 			return "▲"

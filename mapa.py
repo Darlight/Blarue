@@ -1,11 +1,11 @@
-import Ruplay
+▲import Ruplay
 class Mapa(object):
-	def __init__(self, altura, ancho, fichas, robot):
+	def __init__(self, altura, ancho):
 		self.altura = altura
 		self.ancho = ancho
-		self.fichas = fichas
-		self.robot = robot
+		self.fichas = []
+		self.robot = None
 
-	def crear_mapa(self):
-		for self.altura in range(len(lineas))
+	def agregar_ficha(self):
+		pass
 		

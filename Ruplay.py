@@ -2,13 +2,19 @@
 def cargar_mapa(nombre):
 	mapa = open(nombre, "r")
 	lineas = []
+	construccion_de_mapa = None
 	for linea in mapa:
 		lineas.append(list(linea.strip()))
 	for i in range(len(lineas)):
-		espacios = " "
-		lineas [i][i]
-		espacios += lineas[i][i]
-	return espacios
+		for j in range(len(lineas)):
+			if lineas[i][j] == "*":
+				construccion_de_mapa +=
+
+			elif lineas[i][j] == "0":
+
+			else lineas[i][j] != "*" or "0":
+
+
 
 
 print(cargar_mapa("mapas/mapa1.txt"))

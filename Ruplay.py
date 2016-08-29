@@ -2,17 +2,22 @@
 def cargar_mapa(nombre):
 	mapa = open(nombre, "r")
 	lineas = []
-	construccion_de_mapa = None
+	construccion_de_mapa = ""
 	for linea in mapa:
-		lineas.append(list(linea.strip()))
+		lineas.append(list(linea))
 	for i in range(len(lineas)):
-		for j in range(len(lineas)):
+		for j in range(len(lineas[i])):
 			if lineas[i][j] == "*":
-				construccion_de_mapa +=
-
+				construccion_de_mapa += "^"
 			elif lineas[i][j] == "0":
+				construccion_de_mapa += " "
+			elif lineas [i][j] == "\n":
+				construccion_de_mapa += "\n"
+			else:
+				construccion_de_mapa += lineas[i][j]
+				
+	return construccion_de_mapa
 
-			else lineas[i][j] != "*" or "0":
 
 
 

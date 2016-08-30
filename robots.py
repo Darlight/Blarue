@@ -5,29 +5,29 @@ class Robot(object):
 		self.x = x
 		self.y = y
 		self.fichas = 0
-		self.rotacion = "UP"
+		self.rotacion = 0
 		self.mapa = None
 
-	def mover_robot(self, pasos):
-		pass
+	def rotar(self):
+		self.rotacion = (self.rotacion + 1 ) % 4
 
-	def colocar_en_mapa(self, mapa):
+	def dibujar(self):
+		if self.rotacion == 0:
+			return "^"
+
+		elif self.rotacion == 1:
+			return ">"
+
+		if self.rotacion == 2:
+			return "v"
+
+		else:
+			return "<"
+
+	def colocar_en_mapa(self,mapa):
 		self.mapa = mapa
 
-	def rotar_posicion(self):
-		if self.rotacion = "UP":
-			return "^"
-		elif self.rotacion = "RIGHT":
-			return ">"
-		elif self.rotacion = "DOWN":
-			return "v"
-		elif self.rotacion = "LEFT":
-			return "<"
-	
-	def recoger_ficha(self):
-		pass
+	def recoger_fichas(self,x ,y ):
 
-
-	
 
 

@@ -5,11 +5,14 @@ class Mapa(object):
 		self.ancho = ancho
 		self.fichas = []
 		self.robot = None
-	def colocar_robot(self,robot):
-		pass
-	def obtener_representacion(self):
-		pass
 
-	def agregar_ficha(self):
-		pass
-		
+	def ubicar_robot(self,robot):
+		self.robot = robot
+
+	def dibujar(self):
+		for y in range(self.altura):
+			for x in range(self.ancho):
+
+	def agregar_ficha(self,ficha):
+		self.fichas.append(ficha)
+

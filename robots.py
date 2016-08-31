@@ -1,4 +1,6 @@
-from mapa import Mapa
+import mapa
+import Ruplay
+import moneda
 class Robot(object):
 
 	def __init__(self, x, y):
@@ -14,13 +16,10 @@ class Robot(object):
 	def dibujar(self):
 		if self.rotacion == 0:
 			return "^"
-
 		elif self.rotacion == 1:
 			return ">"
-
 		if self.rotacion == 2:
 			return "v"
-
 		else:
 			return "<"
 
@@ -29,5 +28,28 @@ class Robot(object):
 
 	def recoger_fichas(self,x ,y ):
 
+
+
+
+	def mover(self):
+		if self.rotacion == 0:
+			self.y -= 1
+			if self.y < 0:
+				self. y = 0
+		elif self.rotacion == 1:
+			self.x += 1
+			if self.x > 79
+				self.x = 79
+		elif self.rotacion == 2:
+				self.y += 1
+			if self.y > 24:
+				self.y 24
+		elif self.rotacion == 3:
+			self.x -= 1 
+			if self.x < 0:
+				self.x = 0
+
+
+ 
 
 

@@ -4,9 +4,10 @@ def cargar_mapa(nombre):
 	lineas = []
 	construccion_de_mapa = ""
 	for linea in mapa:
-		lineas.append(list(linea))
+		lineas.append(list(linea.strip()))
 	return lineass
 print(cargar_mapa("mapas/mapa1.txt"))
+
 
 #Instrucciones(programa por default para ganar un mapa)
 def cargar_instrucciones(nombre):

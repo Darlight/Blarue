@@ -15,8 +15,8 @@ class Mapa(object):
 		mapa_completo = ""
 		for y in range(self.altura):
 			for x in range(self.ancho):
-				if moneda.x == x and moneda.y == y:
-					mapa_completo += moneda
+				if ficha.x == x and ficha.y == y:
+					mapa_completo += ficha
 				elif robot.x == x and robot.y == y:
 					mapa_completo += robot
 				else:
@@ -24,12 +24,26 @@ class Mapa(object):
 			mapa_completo += "\n"
 		return mapa_completo
 
-
 	def agregar_ficha(self,ficha):
 		self.fichas.append(ficha)
-		if ficha.x == robot.x and ficha.y == robot.y:
-			
-			return 
 
 	def quitar_ficha(self,x,y):
-		if 
+		for f in fichas:
+			if ficha.x == x and ficha.y == y:
+				self.fichas.pop(ficha)
+				break
+
+	def contar_ficha(self, x, y):
+		contador = 0
+		for f in ficha:
+			if ficha.x == x and ficha.y == y:
+				contador += ficha
+		return contador
+
+	def hay_ficha(self,x,y):
+		hay = False
+		if self.x == x and self.y == y:
+			hay = True
+			break
+		return hay 
+

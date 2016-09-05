@@ -23,7 +23,7 @@ class Robot(object):
 	def colocar_en_mapa(self,mapa):
 		self.mapa = mapa
 
-	def recoger_fichas(self,x ,y ):
+	def recoger_fichas(self, x ,y ):
 		if self.mapa.hay_ficha():
 			self.fichas += 1
 

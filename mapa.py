@@ -29,7 +29,7 @@ class Mapa(object):
 
 	def quitar_ficha(self,x,y):
 		for f in fichas:
-			if ficha.x == x and ficha.y == y:
+			if ficha.x == self.x and ficha.y == self.y:
 				self.fichas.pop(ficha)
 				break
 

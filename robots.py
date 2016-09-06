@@ -34,12 +34,12 @@ class Robot(object):
 				self.y = 0
 		elif self.rotacion == 1:
 			self.x += 1
-			if self.x > 79
+			if self.x > 79:
 				self.x = 79
 		elif self.rotacion == 2:
-				self.y += 1
+			self.y += 1
 			if self.y > 24:
-				self.y 24
+				self.y = 24
 		elif self.rotacion == 3:
 			self.x -= 1 
 			if self.x < 0:

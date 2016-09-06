@@ -1,6 +1,3 @@
-▲import Ruplay
-import robots
-import moneda
 class Mapa(object):
 	def __init__(self, altura, ancho):
 		self.altura = altura
@@ -42,8 +39,10 @@ class Mapa(object):
 
 	def hay_ficha(self,x,y):
 		hay = False
-		if self.x == x and self.y == y:
-			hay = True
-			break
+		for y in range(self.altura):
+			for x in range(self.ancho):
+				if self.x == x and self.y == y:
+					hay = True
+					break
 		return hay 
 

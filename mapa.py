@@ -15,7 +15,7 @@ class Mapa(object):
 				if ficha.x == x and ficha.y == y:
 					mapa_completo += ficha
 				elif robot.x == x and robot.y == y:
-					mapa_completo += robot
+					mapa_completo += "^"
 				else:
 					mapa_completo += " "
 			mapa_completo += "\n"

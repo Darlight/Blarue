@@ -15,3 +15,10 @@ def cargar_instrucciones(nombre):
 		lineas_2.append(linea.strip())
 	return lineas_2
 
+def sacar_ancho(nombre):
+	lista = cargar_mapa(nombre)
+	return (len(lista[0]))
+
+def sacar_altura(nombre):
+	lista = cargar_mapa(nombre)
+	return (len(lista))

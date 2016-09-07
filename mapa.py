@@ -1,5 +1,5 @@
 class Mapa(object):
-	def __init__(self, altura, ancho):
+	def __init__(self, ancho, altura):
 		self.altura = altura
 		self.ancho = ancho
 		self.fichas = []

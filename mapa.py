@@ -12,10 +12,10 @@ class Mapa(object):
 		mapa_completo = ""
 		for y in range(self.altura):
 			for x in range(self.ancho):
-				if ficha.x == x and ficha.y == y:
-					mapa_completo += ficha
-				elif robot.x == x and robot.y == y:
-					mapa_completo += "^"
+				if self.robot.x == x and self.robot.y == y:
+					mapa_completo += self.robot.dibujar()
+				elif self.contar_ficha(x, y) > 0:
+					mapa_completo += str(self.contar_ficha(x, y))
 				else:
 					mapa_completo += " "
 			mapa_completo += "\n"
@@ -32,9 +32,9 @@ class Mapa(object):
 
 	def contar_ficha(self, x, y):
 		contador = 0
-		for f in ficha:
+		for ficha in self.fichas:
 			if ficha.x == x and ficha.y == y:
-				contador += ficha
+				contador += 1
 		return contador
 
 	def hay_ficha(self,x,y):

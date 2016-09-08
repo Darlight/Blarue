@@ -15,11 +15,14 @@ uso_de_instrucciones = cargar_instrucciones(instrucciones_elegidas)
 
 for y in range(mapa.altura):
 	for x in range(mapa.ancho):
-		if uso_de_mapa[y][x] == "6":
-			ficha = Ficha([x],[y])
-		elif uso_de_mapa[y][x] == "*":
-			robot = Robot([x],[y])
+		if uso_de_mapa[y][x] == "*":
+			mi_robot = Robot(x,y)
+			mapa.ubicar_robot(mi_robot)
+			mi_robot.colocar_en_mapa(mapa)
 		else:
-			pass
+			cantidad_fichas = int(uso_de_mapa[y][x])
+			for i in range(cantidad_fichas):
+				ficha = Ficha(x,y)
+				mapa.agregar_ficha(ficha)
 
-print(mapa.dibujar())
+

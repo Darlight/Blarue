@@ -24,10 +24,10 @@ class Mapa(object):
 	def agregar_ficha(self,ficha):
 		self.fichas.append(ficha)
 
-	def quitar_ficha(self,x,y):
-		for f in fichas:
-			if ficha.x == self.x and ficha.y == self.y:
-				self.fichas.pop(ficha)
+	def quitar_ficha(self):
+		for f in range(len(self.fichas)):
+			if self.fichas[f].x == self.robot.x and self.fichas[f].y == self.robot.y:
+				self.fichas.pop(f)
 				break
 
 	def contar_ficha(self, x, y):
@@ -37,11 +37,11 @@ class Mapa(object):
 				contador += 1
 		return contador
 
-	def hay_ficha(self,x,y):
+	def hay_ficha(self):
 		hay = False
 		for y in range(self.altura):
 			for x in range(self.ancho):
-				if self.x == x and self.y == y:
+				if self.robot.x == x and self.robot.y == y:
 					hay = True
 					break
 		return hay 

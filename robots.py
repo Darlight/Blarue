@@ -11,6 +11,7 @@ class Robot(object):
 		self.rotacion = (self.rotacion + 1 ) % 4
 
 	def dibujar(self):
+		print(self.rotacion)
 		if self.rotacion == 0:
 			return "^"
 		elif self.rotacion == 1:
@@ -23,7 +24,7 @@ class Robot(object):
 	def colocar_en_mapa(self,mapa):
 		self.mapa = mapa
 
-	def recoger_fichas(self, x ,y ):
+	def recoger_fichas(self):
 		if self.mapa.hay_ficha():
 			self.fichas += 1
 

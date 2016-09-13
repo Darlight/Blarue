@@ -14,11 +14,11 @@ def cargar_instrucciones(nombre):
 	for linea in instruccion:
 		lineas_2.append(linea.strip())
 	return lineas_2
-
+#Saca el len de las filas
 def sacar_ancho(nombre):
 	lista = cargar_mapa(nombre)
 	return (len(lista[0]))
-
+#Saca el len de las columnas
 def sacar_altura(nombre):
 	lista = cargar_mapa(nombre)
 	return (len(lista))

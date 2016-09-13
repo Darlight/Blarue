@@ -11,7 +11,7 @@ uso_de_mapa = cargar_mapa(mapa_eligido)
 
 instrucciones_elegidas = "Instrucciones/instruccion1.txt"
 uso_de_instrucciones = cargar_instrucciones(instrucciones_elegidas)
-
+#AQUi revisa otra vez pero con los datos ya ingresados del mapa deseado
 for y in range(mi_mapa.altura):
 	for x in range(mi_mapa.ancho):
 		if uso_de_mapa[y][x] == "*":
@@ -34,6 +34,7 @@ for i in uso_de_instrucciones:
 		mi_mapa.quitar_ficha()
 	time.sleep(0.5)
 	print(mi_mapa.dibujar())
+	print("Fichas Recogidas: ", mi_robot.fichas)
 	
 
 

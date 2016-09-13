@@ -16,7 +16,7 @@ class Robot(object):
 			return "^"
 		elif self.rotacion == 1:
 			return ">"
-		if self.rotacion == 2:
+		elif self.rotacion == 2:
 			return "v"
 		else:
 			return "<"
